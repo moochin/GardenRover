@@ -14,11 +14,10 @@ namespace GardenRover.Tests
         public void CanProvideCurrentLocationAsString()
         {
             //Given
-            Grass grass = new Grass(5, 5);
             Coordinates startingPosition = new Coordinates(3, 3);
 
             //When
-            GardenRover GardenRover = new GardenRover(grass, "N", startingPosition);
+            GardenRover GardenRover = new GardenRover("N", startingPosition);
 
             //Then
             Assert.AreEqual("3 3 N", GardenRover.CurrentLocation());
