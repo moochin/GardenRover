@@ -1,9 +1,9 @@
 # Garden Rover
 ## Coding Task: Robotic Lawn Mower
  
-A squad of robotic lawn mowers are to be used to cut the grass of homes in the local area. These gardens, which are curiously rectangular, must be navigated by the lawn mowers so that every bit of grass is cut.
+A squad of robotic lawn mowers are to be used to cut the grass of homes in the local area. These gardens, which are curiously rectangular and all the same size, must be navigated by the lawn mowers so that every bit of grass is cut.
 
-A mower's position and location is represented by a combination of x and y coordinates and a letter representing one of the four cardinal compass points. The garden is divided up into a grid to simplify navigation. An example position might be `0 0 N` which means the mower is in the bottom left corner and facing North.
+A mower's position is represented by a combination of x and y coordinates and a letter representing one of the four cardinal compass points. The garden is divided up into a grid to simplify navigation. An example position might be `0 0 N` which means the mower is in the bottom left corner and facing North.
 
 Each mower will explore sequentially, which means that the second mower won't start to move until the first one has finished moving.  
  
@@ -12,7 +12,7 @@ In order to control a mower, the gardener sends a simple string of letters. The 
 Assume that the square directly North from (x, y) is (x, y+1).
 
 ### Input:
-* The first line of input is the most North-East coordinates of the garden , the most South-West coordinates are assumed to be 0,0. 
+* The first line of input is the most North-East coordinates of the garden, the most South-West coordinates are assumed to be (0,0). 
 * The rest of the input is information pertaining to the mowers that have been deployed. Each mower has two lines of input. The first line gives the mower's position, and the second line is a series of instructions telling the mower how to explore the garden. 
 
 ### Output:
