@@ -21,7 +21,7 @@ namespace GardenRover.Tests
             Mower mower = new Mower(startingLocation, initialHeading);
 
             //Then
-            Assert.AreEqual("3 3 N", gardenRover.CurrentPosition());
+            Assert.AreEqual("3 3 N", mower.CurrentPosition());
         }
     }
 }
